@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - GVGCRP Bot</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | GVGCRP Bot</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
-      background: #ffffff;
-      color: #111;
       font-family: 'Poppins', sans-serif;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
+      background: #ffffff;
+      color: #1e1e1e;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
     }
-    h1 {
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 60px 20px;
       text-align: center;
-      color: #007bff;
-      text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+      box-shadow: 0 0 30px rgba(24, 40, 72, 0.5);
     }
-    h2 {
-      margin-top: 30px;
-      color: #222;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
+
+    header p {
+      font-size: 1.2em;
+      color: #dbe4ff;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 60px auto;
+      background: #f8f9fa;
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      line-height: 1.8;
+    }
+
+    section h2 {
+      color: #2e4b8a;
+      border-left: 5px solid #4b6cb7;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    section p {
+      font-size: 1.05em;
+      margin-top: 10px;
+      color: #333;
+    }
+
     a.button {
       display: inline-block;
-      background: linear-gradient(90deg, #007bff, #00d4ff);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    a.button:hover {
-      box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-      transform: scale(1.05);
-    }
-    footer {
-      text-align: center;
       margin-top: 40px;
-      color: #555;
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 14px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(75, 108, 183, 0.6);
+    }
+
+    a.button:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 25px rgba(75, 108, 183, 0.9);
+    }
+
+    footer {
+      margin-top: 80px;
+      background: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      letter-spacing: 0.5px;
+    }
+
+    footer span {
+      color: #4b6cb7;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>🔒 Privacy Policy</h1>
-  <p>We value your privacy. This policy explains how GVGCRP Bot handles your data.</p>
+  <header>
+    <h1>GVGCRP Bot - Privacy Policy</h1>
+    <p>Transparency, security, and respect for your data 🔐</p>
+  </header>
 
-  <h2>1. Information We Collect</h2>
-  <p>The bot may collect server IDs, user IDs, and session-related data necessary to perform commands. We do not collect personal information like emails or passwords.</p>
+  <section>
+    <h2>1. Data We Collect</h2>
+    <p>GVGCRP Bot collects only essential information such as user IDs, guild IDs, and session details. We do not access or store chat messages.</p>
 
-  <h2>2. Data Usage</h2>
-  <p>All data is used only to enhance your experience and maintain bot functionality. We never sell or share your information.</p>
+    <h2>2. Why We Collect Data</h2>
+    <p>Data is used to improve server automation, ensure feature stability, and provide better user experience across Greenville RP servers.</p>
 
-  <h2>3. Data Removal</h2>
-  <p>You may request data removal by contacting the bot owner through Discord or GitHub.</p>
+    <h2>3. Data Retention</h2>
+    <p>All stored information is kept only as long as necessary for the bot’s operation. Users may request data deletion at any time.</p>
 
-  <a href="index.html" class="button">⬅️ Go Back to Home</a>
-  <footer>© 2025 GVGCRP Bot. All rights reserved.</footer>
+    <h2>4. Security</h2>
+    <p>All stored data is protected and never shared with third parties. We use secure and encrypted connections at all times.</p>
+
+    <h2>5. Contact</h2>
+    <p>If you have privacy concerns, reach out to the GVGCRP support team via our Discord server.</p>
+
+    <a href="index.html" class="button">⬅ Go Back to Home</a>
+  </section>
+
+  <footer>
+    © 2025 <span>GVGCRP Bot</span> | All Rights Reserved 🚀
+  </footer>
 </body>
 </html>
