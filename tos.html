@@ -5,103 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service | GVGCRP Bot</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
-      font-family: "Poppins", sans-serif;
-      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
       color: #1e1e1e;
       margin: 0;
       padding: 0;
-      text-align: center;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     header {
       background: linear-gradient(90deg, #4b6cb7, #182848);
       color: white;
-      padding: 40px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(24, 40, 72, 0.5);
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #dbe4ff;
     }
 
     section {
-      max-width: 900px;
-      margin: 50px auto;
+      max-width: 950px;
+      margin: 60px auto;
       background: #f8f9fa;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
       text-align: left;
-    }
-
-    h2 {
-      color: #2e4b8a;
-    }
-
-    p {
       line-height: 1.8;
-      margin-bottom: 20px;
+    }
+
+    section h2 {
+      color: #2e4b8a;
+      border-left: 5px solid #4b6cb7;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    section p {
+      font-size: 1.05em;
+      margin-top: 10px;
+      color: #333;
     }
 
     a.button {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 40px;
       background: linear-gradient(90deg, #4b6cb7, #182848);
       color: white;
-      padding: 12px 30px;
+      padding: 14px 35px;
       border-radius: 50px;
       text-decoration: none;
-      transition: 0.3s;
       font-weight: 600;
-      box-shadow: 0 0 10px rgba(75, 108, 183, 0.6);
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(75, 108, 183, 0.6);
     }
 
     a.button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(75, 108, 183, 0.9);
+      transform: scale(1.07);
+      box-shadow: 0 0 25px rgba(75, 108, 183, 0.9);
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #182848;
+      margin-top: 80px;
+      background: #182848;
       color: white;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
+      letter-spacing: 0.5px;
+    }
+
+    footer span {
+      color: #4b6cb7;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>GVGCRP Bot - Terms of Service</h1>
-    <p>Your journey to a better Greenville RP experience starts here 🚗</p>
+    <p>Making Greenville sessions smarter, smoother, and more fun 🚗💨</p>
   </header>
 
-  <section> 
+  <section>
     <h2>1. Acceptance of Terms</h2>
-    <p>By adding or using GVGCRP Bot in your server, you agree to these Terms of Service. If you do not agree, please remove the bot immediately.</p>
+    <p>By using or adding <strong>GVGCRP Bot</strong> to your Discord server, you agree to these Terms of Service. If you disagree, please remove the bot from your server.</p>
 
-    <h2>2. Usage Guidelines</h2>
-    <p>GVGCRP Bot is designed to enhance your Greenville RP experience. You agree not to abuse, exploit, or use the bot in ways that violate Discord’s Terms of Service or Community Guidelines.</p>
+    <h2>2. Purpose & Usage</h2>
+    <p>This bot is built to assist Greenville roleplay servers with automation, moderation, and quality-of-life features. You must not misuse or exploit its functionality.</p>
 
-    <h2>3. Data & Privacy</h2>
-    <p>We value your privacy. The bot may store minimal necessary data such as user IDs and guild information for functionality purposes. For more details, check our <a href="privacy.html">Privacy Policy</a>.</p>
+    <h2>3. Data Handling</h2>
+    <p>GVGCRP Bot only stores essential information such as user IDs, guild IDs, and session-related data for proper operation. We do <strong>not</strong> store chat logs or personal information. Learn more in our <a href="privacy.html">Privacy Policy</a>.</p>
 
-    <h2>4. Availability</h2>
-    <p>We strive to keep GVGCRP Bot online 24/7. However, we do not guarantee uptime and may temporarily disable services for updates or maintenance.</p>
+    <h2>4. Uptime & Support</h2>
+    <p>We strive to maintain 24/7 uptime, but occasional maintenance or updates may cause downtime. Support is offered through our official Discord server.</p>
 
-    <h2>5. Termination</h2>
-    <p>We reserve the right to ban users, servers, or revoke access at any time if terms are violated or misuse is detected.</p>
+    <h2>5. Violations & Termination</h2>
+    <p>We reserve the right to suspend or block access to the bot if users or servers are found violating Discord’s <a href="https://discord.com/terms" target="_blank">Terms of Service</a> or our internal rules.</p>
 
-    <h2>6. Changes to Terms</h2>
-    <p>We may update these terms from time to time. Continued use of the bot after any updates constitutes acceptance of the new terms.</p>
+    <h2>6. Modifications</h2>
+    <p>We may update these terms without prior notice. The “Last Updated” date below indicates the most recent revision.</p>
+
+    <p><em>Last Updated: October 2025</em></p>
 
     <a href="index.html" class="button">⬅ Go Back to Home</a>
   </section>
 
   <footer>
-    © 2025 GVGCRP Bot | All Rights Reserved 🚀
+    © 2025 <span>GVGCRP Bot</span> | All Rights Reserved 🚀
   </footer>
 </body>
 </html>
