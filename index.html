@@ -1,113 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GVGCRP Bot</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffffff, #f1f5f9);
-      color: #1e1e1e;
+      background-color: #ffffff;
+      color: #111;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
       text-align: center;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 3em;
-      color: #2563eb;
-      margin-bottom: 10px;
-      text-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+      text-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin: 0 20px 25px;
+      max-width: 600px;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
       line-height: 1.6;
-      color: #374151;
     }
 
-    .buttons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    a {
-      background: #2563eb;
-      color: #ffffff;
-      padding: 12px 28px;
-      border-radius: 10px;
+    .button {
+      display: inline-block;
+      background: linear-gradient(90deg, #007bff, #00d4ff);
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      font-size: 1rem;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1em;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
-      position: relative;
-      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
     }
 
-    a::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 40%);
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-
-    a:hover::before {
-      opacity: 1;
-      animation: glow 1.5s infinite;
-    }
-
-    a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 25px rgba(37, 99, 235, 0.6);
-    }
-
-    @keyframes glow {
-      0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.4; }
-      50% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-      100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.4; }
+    .button:hover {
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+      transform: scale(1.05);
     }
 
     footer {
       position: absolute;
       bottom: 15px;
-      font-size: 0.9em;
-      color: #6b7280;
+      font-size: 0.9rem;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <h1>GVGCRP Bot</h1>
-  <p><strong>A new way for Greenville sessions.</strong></p>
-
+  <h1>🚗 GVGCRP Bot</h1>
   <p>
-    GVGCRP Bot makes hosting and managing Greenville sessions effortless — 
-    from startup announcements to automated releases and organized session coordination.
-    Enjoy interactive embeds, command-based management, and smooth automation to 
-    keep your community active and well-managed.
+    GVGCRP Bot — the new and better way to host, manage, and automate your <strong>Greenville sessions</strong>.  
+    Simple commands. Beautiful embeds. Total control.
   </p>
 
-  <div class="buttons">
-    <a href="tos.html?v=2">📜 Terms of Service</a>
-    <a href="privacy.html">🔒 Privacy Policy</a>
-  </div>
+  <a href="tos.html" class="button">📜 Terms of Service</a>
+  <a href="privacy.html" class="button">🔒 Privacy Policy</a>
 
   <footer>© 2025 GVGCRP Bot. All rights reserved.</footer>
 </body>
